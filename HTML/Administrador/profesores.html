@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesores | Administrador</title>
+    <link rel="stylesheet" href="/CSS/Dashwork.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+         <div class="sidebar-top">
+            <h2>🏫 Administrador</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-link">🏡 Home</a>
+            <a href="alumnos.html" class="nav-link">👨‍🎓 Alumnos</a>
+            <a href="profesores.html" class="nav-link">👩‍🏫 Profesores</a>
+            <a hreft="#" class="nav-link">🚪 Exit</a>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <h1>Gestión de Profesores</h1>
+        <p>Gestione la información de los profesores registrados en el colegio.</p>
+        <div class="actions">
+            <button class="btn-add">+ Agregar Profesor</button>
+            <input type="text" placeholder="Buscar profesor..." class="search-input">
+        </div>
+
+        <table class="teachers-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Especialidad</th>
+                    <th>Correo</th>
+                    <th>Estado</th>
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pedro Ramírez</td>
+                    <td>Matemáticas</td>
+                    <td>pedro.ramirez@colegio.edu</td>
+                    <td class="status active">Activo</td>
+                    <td>
+                        <span class="option">✏️</span>
+                        <span class="option">🗑️</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ana Torres</td>
+                    <td>Lengua y Literatura</td>
+                    <td>ana.torres@colegio.edu</td>
+                    <td class="status inactive">Inactivo</td>
+                    <td>
+                        <span class="option">✏️</span>
+                        <span class="option">🗑️</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Luis García</td>
+                    <td>Ciencias</td>
+                    <td>luis.garcia@colegio.edu</td>
+                    <td class="status active">Activo</td>
+                    <td>
+                        <span class="option">✏️</span>
+                        <span class="option">🗑️</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>

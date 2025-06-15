@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alumnos | Administrador</title>
+  <link rel="stylesheet" href="/CSS/Dashwork.css">
+</head>
+
+<body>
+  <aside class="sidebar">
+     <div class="sidebar-top">
+      <h2>🏫 Administrador</h2>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-link">🏡 Home</a>
+      <a href="alumnos.html" class="nav-link">👨‍🎓 Alumnos</a>
+      <a href="profesores.html" class="nav-link">👩‍🏫 Profesores</a>
+      <a hreft="#" class="nav-link">🚪 Exit</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <h1>Gestión de Alumnos</h1>
+    <p>Gestione la información de los alumnos registrados en el colegio.</p>
+    <div class="actions">
+      <button class="btn-add">+ Agregar Alumno</button>
+      <input type="text" placeholder="Buscar alumno..." class="search-input">
+    </div>
+
+
+    <table class="students-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Nivel</th>
+          <th>Grado</th>
+          <th>Sección</th>
+          <th>Estado</th>
+          <th>Opciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Juan Pérez</td>
+          <td>Primaria</td>
+          <td>5°</td>
+          <td>A</td>
+          <td class="status active">Activo</td>
+          <td>
+            <span class="option">✏️ Editar</span>
+            <span class="option">🗑️ Eliminar</span>
+          </td>
+        </tr>
+        <tr>
+          <td>María López</td>
+          <td>Secundaria</td>
+          <td>4°</td>
+          <td>B</td>
+          <td class="status inactive">Inactivo</td>
+          <td>
+            <span class="option">✏️ Editar</span>
+            <span class="option">🗑️ Eliminar</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Pepe Lucho</td>
+          <td>Secundaria</td>
+          <td>2°</td>
+          <td>C</td>
+          <td class="status inactive">Activo</td>
+          <td>
+            <span class="option">✏️ Editar</span>
+            <span class="option">🗑️ Eliminar</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Carlos Díaz</td>
+          <td>Primaria</td>
+          <td>3°</td>
+          <td>A</td>
+          <td class="status active">Activo</td>
+          <td>
+            <span class="option">✏️ Editar</span>
+            <span class="option">🗑️ Eliminar</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+
+</html>
