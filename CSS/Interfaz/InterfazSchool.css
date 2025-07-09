@@ -60,19 +60,23 @@ body {
     padding: var(--padding-sm) 0;
     position: relative;
     z-index: 10;
+    width: 100%;
+    align-items: center; /******** Centra todo el contenido */
 }
 
 .main-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 500 var(--padding-lg);
+    max-width: 1200px; /* Evita que el header se estire demasiado */
+    margin: 0 auto;
+    padding:var(--padding-sm) var(--padding-lg);
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-left: -200px;
+    margin-left: auto;
 }
 
 .logo img {
@@ -145,27 +149,23 @@ body {
     height: 950px;
     background: url('/IMAGENES/fondo.jpg') no-repeat center center/cover;
     overflow: hidden;
+        justify-content: center; /* Centra contenido dentro */
     z-index: 1;
 }
 
 .hero-section {
     position: relative;
-    height: 350px;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color: var(--color-header-texto);
-    z-index: 2;
-    background-color: transparent;
-    
-    padding-left: -90%;
-    box-sizing: border-box;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    color: white;
 }
 
 .hero-overlay {
-    background-color: var(--color-overlay-transparente);
     position: absolute;
     top: 0;
     left: 0;
@@ -177,31 +177,62 @@ body {
 .hero-section .container {
     position: relative;
     z-index: 2;
-    max-width: 800px;
-    padding: 0;
+    padding-left: 80px; /* Empuja el contenido a la derecha */
+    margin-bottom: 40px; /* Deja espacio con lo siguiente */
 }
 
-.hero-section {
-    transform: translateX(-600px);
-}
 .hero-section h1 {
-    font-size: 4em;
-    font-weight: bold;
-    line-height: 1.2;
-    margin: 0 0 20px 0;
+     font-size: 4rem; /* Más grande */
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Sombra negra elegante */
+    margin-left: 60px; /* Moverlo a la derecha */
 }
 
-.btn-matriculate {
-    background-color: var(--color-azul-claro-btn);
-    color: var(--color-header-texto);
-    font-size: 1.2em;
-    padding: 20px 35px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    display: inline-block;
-    border: none;
+.hero-section .btn-matriculate {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 60px;
 }
 
+/* Responsive para tablets */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+        margin-left: 20px; /* Menos margen en pantallas pequeñas */
+        text-align: left;
+    }
+
+    .hero-section .btn-matriculate {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Responsive para celulares */
+@media (max-width: 480px) {
+    .hero-section {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section .btn-matriculate {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .hero-section .container {
+        padding: 0;
+    }
+}
 .btn-matriculate:hover {
     background-color: var(--color-azul-oscuro-btn);
 }
@@ -215,7 +246,7 @@ body {
     position: relative;
     z-index: 3;
     
-    margin-top: 150px;
+    margin-top: 00px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1250px;

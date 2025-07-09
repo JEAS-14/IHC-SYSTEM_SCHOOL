@@ -53,7 +53,7 @@
 }
 
 .authority-director {
-    font-size: 1.2em;
+    font-size: 20px;
     font-weight: bold;
     color: var(--color-azul-claro-btn);
     margin-bottom: var(--padding-sm);
@@ -75,7 +75,6 @@
 
 .authorities-list p {
     margin-bottom: calc(var(--padding-sm) / 2);
-    font-size: 0.95em;
 }
 
 .authorities-list p span {
